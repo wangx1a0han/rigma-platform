@@ -1540,84 +1540,99 @@ WHY RIGMA
 }
 
 /* =========================
-   Mobile Responsive Design
+Mobile Responsive Design
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
 
-    /* Header */
-    .header-container {
-        padding: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+/* ===== Header ===== */
+
+.header-container{
+
+    padding:20px;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+}
 
 
-    .logo img {
-        width: 120px;
-    }
+.logo img{
+
+    width:120px;
+
+}
 
 
-    .nav {
-        width: 100%;
-        overflow: hidden;
-    }
+/* Hide desktop navigation */
 
+.nav{
 
-    .nav ul {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+    display:none;
 
-
-    .nav a {
-        font-size: 14px;
-    }
-
-
-
-    /* Hero Layout */
-
-    .hero-container {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-
-
-    .hero-text {
-        width: 100%;
-    }
-
-
-    .hero-text h1 {
-        font-size: 52px;
-        line-height: 0.95;
-        letter-spacing: -1px;
-    }
-
-
-    .hero-text p {
-        font-size: 20px;
-        line-height: 1.5;
-    }
-
-
-    .hero-image {
-        width: 100%;
-        margin-top: 40px;
-    }
-
-
-    .hero-image img {
-        width: 100%;
-        height: auto;
-    }
+}
 
 
 
-    .hero-button {
-        margin-top: 30px;
-    }
+/* ===== Hero ===== */
+
+
+.hero-container{
+
+    flex-direction:column;
+    padding:50px 20px;
+
+}
+
+
+.hero-text{
+
+    width:100%;
+
+}
+
+
+.hero-text h1{
+
+    font-size:42px;
+    line-height:1;
+    letter-spacing:-1px;
+
+}
+
+
+.hero-text p{
+
+    font-size:20px;
+    line-height:1.5;
+
+}
+
+
+
+.hero-image{
+
+    width:100%;
+    margin-top:40px;
+
+}
+
+
+.hero-image img{
+
+    width:100%;
+    height:auto;
+
+}
+
+
+
+.hero-button{
+
+    margin-top:30px;
+
+}
+
 
 }
