@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About RIGMA | Professional Stage Lifting Systems</title>
+    <meta name="description" content="Learn about RIGMA, a professional stage lifting brand focused on reliable hoists, coordinated systems and long-term support for the global entertainment industry.">
+    <link rel="canonical" href="https://www.rigmahoist.com/about/">
+    <link rel="stylesheet" href="/css/style.css?v=3">
+    <link rel="stylesheet" href="/css/products.css?v=3">
+    <style>
+        .about-page{
+            --about-green:#8cff00;
+            --about-ink:#151615;
+            --about-muted:#60625f;
+            --about-line:#d7d8d3;
+            --about-soft:#f4f4f1;
+            --about-white:#fff;
+        }
+
+        .about-page .about-hero{
+            padding:112px 0 118px;
+            border-bottom:1px solid var(--about-line);
+            background:
+                linear-gradient(90deg,rgba(140,255,0,.08) 0,rgba(140,255,0,0) 42%),
+                var(--about-soft);
+        }
+
+        .about-page .about-hero-grid{
+            display:grid;
+            grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);
+            gap:90px;
+            align-items:end;
+        }
+
+        .about-page .about-title{
+            max-width:980px;
+            color:var(--about-ink);
+            font-size:clamp(66px,8vw,124px);
+            font-weight:800;
+            line-height:.86;
+            letter-spacing:-6px;
+            text-transform:uppercase;
+        }
+
+        .about-page .about-title span{
+            color:var(--about-green);
+        }
+
+        .about-page .about-hero-copy{
+            padding:10px 0 10px 34px;
+            border-left:3px solid var(--about-green);
+        }
+
+        .about-page .about-hero-copy p{
+            color:var(--about-muted);
+            font-size:18px;
+            line-height:1.75;
+        }
+
+        .about-page .about-section{
+            padding:108px 0;
+            border-bottom:1px solid var(--about-line);
+        }
+
+        .about-page .about-section-white{
+            background:var(--about-white);
+        }
+
+        .about-page .about-section-soft{
+            background:var(--about-soft);
+        }
+
+        .about-page .about-section-dark{
+            color:#fff;
+            background:#080908;
+        }
+
+        .about-page .about-intro-grid{
+            display:grid;
+            grid-template-columns:minmax(260px,.7fr) minmax(0,1.3fr);
+            gap:90px;
+            align-items:start;
+        }
+
+        .about-page .about-statement{
+            max-width:900px;
+            color:var(--about-ink);
+            font-size:clamp(34px,4.1vw,62px);
+            font-weight:700;
+            line-height:1.08;
+            letter-spacing:-2px;
+        }
+
+        .about-page .about-statement + p{
+            max-width:760px;
+            margin-top:34px;
+            color:var(--about-muted);
+            font-size:18px;
+            line-height:1.8;
+        }
+
+        .about-page .about-label{
+            display:inline-block;
+            color:#587132;
+            font-size:12px;
+            font-weight:800;
+            letter-spacing:3.5px;
+            text-transform:uppercase;
+        }
+
+        .about-page .about-section-dark .about-label{
+            color:var(--about-green);
+        }
+
+        .about-page .about-heading-row{
+            display:flex;
+            justify-content:space-between;
+            gap:60px;
+            align-items:flex-end;
+            margin-bottom:56px;
+        }
+
+        .about-page .about-heading-row h2{
+            max-width:860px;
+            margin-top:22px;
+            color:var(--about-ink);
+            font-size:clamp(44px,5.7vw,82px);
+            line-height:.94;
+            letter-spacing:-3px;
+            text-transform:uppercase;
+        }
+
+        .about-page .about-heading-row > p{
+            max-width:480px;
+            color:var(--about-muted);
+            font-size:16px;
+            line-height:1.7;
+        }
+
+        .about-page .about-section-dark .about-heading-row h2{
+            color:#fff;
+        }
+
+        .about-page .about-section-dark .about-heading-row > p{
+            color:#9da09c;
+        }
+
+        .about-page .principle-grid{
+            display:grid;
+            grid-template-columns:repeat(4,minmax(0,1fr));
+            border-top:1px solid var(--about-line);
+            border-left:1px solid var(--about-line);
+        }
+
+        .about-page .principle-card{
+            min-height:330px;
+            padding:34px;
+            border-right:1px solid var(--about-line);
+            border-bottom:1px solid var(--about-line);
+            background:#fff;
+        }
+
+        .about-page .principle-number,
+        .about-page .process-number{
+            color:#6f9a37;
+            font-size:12px;
+            font-weight:800;
+            letter-spacing:2px;
+        }
+
+        .about-page .principle-card h3{
+            margin-top:76px;
+            color:var(--about-ink);
+            font-size:28px;
+            line-height:1.05;
+            text-transform:uppercase;
+        }
+
+        .about-page .principle-card p{
+            margin-top:17px;
+            color:var(--about-muted);
+            font-size:15px;
+            line-height:1.65;
+        }
+
+        .about-page .system-grid{
+            display:grid;
+            grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+            border:1px solid #292b29;
+        }
+
+        .about-page .system-message{
+            min-height:500px;
+            padding:64px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            border-right:1px solid #292b29;
+            background:
+                radial-gradient(circle at 14% 22%,rgba(140,255,0,.11),transparent 35%),
+                #080908;
+        }
+
+        .about-page .system-message h2{
+            max-width:800px;
+            color:#fff;
+            font-size:clamp(48px,6vw,88px);
+            line-height:.9;
+            letter-spacing:-4px;
+            text-transform:uppercase;
+        }
+
+        .about-page .system-message h2 span{
+            color:var(--about-green);
+        }
+
+        .about-page .system-message p{
+            max-width:700px;
+            margin-top:34px;
+            color:#a8aba7;
+            font-size:17px;
+            line-height:1.7;
+        }
+
+        .about-page .system-list{
+            display:grid;
+            grid-template-rows:repeat(4,1fr);
+        }
+
+        .about-page .system-item{
+            padding:30px 34px;
+            display:grid;
+            grid-template-columns:58px 1fr;
+            gap:22px;
+            align-items:center;
+            border-bottom:1px solid #292b29;
+        }
+
+        .about-page .system-item:last-child{
+            border-bottom:0;
+        }
+
+        .about-page .system-item span{
+            color:var(--about-green);
+            font-size:13px;
+            font-weight:800;
+        }
+
+        .about-page .system-item strong{
+            display:block;
+            color:#fff;
+            font-size:23px;
+            line-height:1.1;
+            text-transform:uppercase;
+        }
+
+        .about-page .system-item p{
+            margin-top:8px;
+            color:#929591;
+            font-size:14px;
+            line-height:1.55;
+        }
+
+        .about-page .process-list{
+            border-top:1px solid var(--about-line);
+        }
+
+        .about-page .process-item{
+            display:grid;
+            grid-template-columns:100px minmax(220px,.65fr) minmax(0,1.35fr);
+            gap:38px;
+            align-items:center;
+            min-height:150px;
+            border-bottom:1px solid var(--about-line);
+        }
+
+        .about-page .process-item h3{
+            color:var(--about-ink);
+            font-size:30px;
+            line-height:1;
+            text-transform:uppercase;
+        }
+
+        .about-page .process-item p{
+            max-width:720px;
+            color:var(--about-muted);
+            font-size:16px;
+            line-height:1.65;
+        }
+
+        .about-page .application-grid{
+            display:grid;
+            grid-template-columns:repeat(4,minmax(0,1fr));
+            gap:14px;
+            margin-top:52px;
+        }
+
+        .about-page .application-item{
+            min-height:190px;
+            padding:30px;
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-end;
+            border:1px solid var(--about-line);
+            background:#fff;
+        }
+
+        .about-page .application-item span{
+            color:#7b7e79;
+            font-size:10px;
+            font-weight:700;
+            letter-spacing:2px;
+        }
+
+        .about-page .application-item h3{
+            margin-top:18px;
+            color:var(--about-ink);
+            font-size:24px;
+            text-transform:uppercase;
+        }
+
+        .about-page .future-panel{
+            padding:72px;
+            display:grid;
+            grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);
+            gap:70px;
+            align-items:center;
+            border:1px solid var(--about-line);
+            background:linear-gradient(135deg,#fff 0,#efffdc 100%);
+        }
+
+        .about-page .future-panel h2{
+            max-width:850px;
+            margin-top:20px;
+            color:var(--about-ink);
+            font-size:clamp(42px,5vw,72px);
+            line-height:.95;
+            letter-spacing:-3px;
+            text-transform:uppercase;
+        }
+
+        .about-page .future-panel p{
+            color:var(--about-muted);
+            font-size:17px;
+            line-height:1.75;
+        }
+
+        .about-page .about-contact{
+            padding:86px 0;
+            background:#080908;
+        }
+
+        .about-page .about-contact-grid{
+            display:grid;
+            grid-template-columns:minmax(0,1fr) auto;
+            gap:50px;
+            align-items:center;
+        }
+
+        .about-page .about-contact h2{
+            max-width:900px;
+            color:#fff;
+            font-size:clamp(42px,5.5vw,78px);
+            line-height:.94;
+            letter-spacing:-3px;
+            text-transform:uppercase;
+        }
+
+        .about-page .about-contact p{
+            max-width:720px;
+            margin-top:22px;
+            color:#a1a4a0;
+            font-size:17px;
+            line-height:1.7;
+        }
+
+        .about-page .about-contact .catalog-button{
+            color:#000;
+            border-color:var(--about-green);
+            background:var(--about-green);
+        }
+
+        .about-page .about-contact .catalog-button:hover{
+            color:var(--about-green);
+            background:transparent;
+        }
+
+        @media (max-width:1100px){
+            .about-page .about-hero-grid,
+            .about-page .about-intro-grid,
+            .about-page .system-grid,
+            .about-page .future-panel{
+                grid-template-columns:1fr;
+            }
+
+            .about-page .principle-grid,
+            .about-page .application-grid{
+                grid-template-columns:repeat(2,minmax(0,1fr));
+            }
+
+            .about-page .system-message{
+                min-height:430px;
+                border-right:0;
+                border-bottom:1px solid #292b29;
+            }
+        }
+
+        @media (max-width:768px){
+            .about-page .about-hero,
+            .about-page .about-section{
+                padding:68px 0;
+            }
+
+            .about-page .about-title{
+                font-size:clamp(50px,15vw,70px);
+                letter-spacing:-3px;
+            }
+
+            .about-page .about-hero-grid,
+            .about-page .about-intro-grid{
+                gap:44px;
+            }
+
+            .about-page .about-hero-copy{
+                padding-left:22px;
+            }
+
+            .about-page .about-heading-row{
+                align-items:flex-start;
+                flex-direction:column;
+                margin-bottom:38px;
+            }
+
+            .about-page .about-heading-row h2{
+                font-size:42px;
+                letter-spacing:-2px;
+            }
+
+            .about-page .principle-grid,
+            .about-page .application-grid{
+                grid-template-columns:1fr;
+            }
+
+            .about-page .principle-card{
+                min-height:250px;
+            }
+
+            .about-page .principle-card h3{
+                margin-top:46px;
+            }
+
+            .about-page .system-message{
+                min-height:380px;
+                padding:38px 28px;
+            }
+
+            .about-page .system-message h2{
+                font-size:46px;
+                letter-spacing:-2px;
+            }
+
+            .about-page .system-item{
+                grid-template-columns:42px 1fr;
+                padding:26px 22px;
+            }
+
+            .about-page .process-item{
+                grid-template-columns:52px 1fr;
+                gap:20px;
+                padding:28px 0;
+            }
+
+            .about-page .process-item p{
+                grid-column:2;
+            }
+
+            .about-page .future-panel{
+                padding:38px 28px;
+                gap:34px;
+            }
+
+            .about-page .about-contact{
+                padding:68px 0;
+            }
+
+            .about-page .about-contact-grid{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"RIGMA",
+        "url":"https://www.rigmahoist.com/",
+        "description":"Professional stage lifting systems for the global entertainment industry.",
+        "email":"sales@rigmahoist.com",
+        "sameAs":["https://www.facebook.com/profile.php?id=100087766267719"]
+    }
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="catalog-main about-page">
+        <div class="catalog-breadcrumbs">
+            <div class="catalog-container"><a href="/">Home</a><span>/</span>About RIGMA</div>
+        </div>
+
+        <section class="about-hero">
+            <div class="catalog-container about-hero-grid">
+                <div>
+                    <span class="catalog-eyebrow">About RIGMA</span>
+                    <h1 class="about-title">Confidence<br><span>above the stage.</span></h1>
+                </div>
+                <div class="about-hero-copy">
+                    <p>RIGMA is a professional stage lifting brand focused on reliable equipment, coordinated systems and clear long-term support for the global entertainment industry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-white">
+            <div class="catalog-container about-intro-grid">
+                <span class="about-label">Our purpose</span>
+                <div>
+                    <p class="about-statement">We help entertainment professionals lift with greater confidence—from the individual hoist to the complete operating system.</p>
+                    <p>Every production depends on equipment that performs consistently under real working conditions. RIGMA brings together stage hoists, control, transport and system accessories around the needs of professional users: safety, repeatability, efficient deployment and dependable technical communication.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-soft">
+            <div class="catalog-container">
+                <div class="about-heading-row">
+                    <div><span class="about-label">What guides us</span><h2>Professional by design.</h2></div>
+                    <p>Four principles shape how RIGMA selects products, develops systems and supports customers.</p>
+                </div>
+                <div class="principle-grid">
+                    <article class="principle-card"><span class="principle-number">01</span><h3>Safety</h3><p>Product configurations and system choices are considered around controlled, dependable lifting in professional environments.</p></article>
+                    <article class="principle-card"><span class="principle-number">02</span><h3>Engineering</h3><p>We value precise mechanical design, consistent performance and technical information that professionals can use.</p></article>
+                    <article class="principle-card"><span class="principle-number">03</span><h3>Complete systems</h3><p>Hoists, controllers, flight cases and accessories are organised as one coordinated lifting ecosystem.</p></article>
+                    <article class="principle-card"><span class="principle-number">04</span><h3>Long-term support</h3><p>Clear product documentation, responsive communication and lifecycle thinking continue beyond delivery.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-dark">
+            <div class="catalog-container">
+                <div class="system-grid">
+                    <div class="system-message">
+                        <span class="about-label">The RIGMA ecosystem</span>
+                        <div><h2>More than<br><span>a hoist.</span></h2><p>A reliable lifting solution depends on every part of the workflow. RIGMA connects lifting, control, transport and system integration so customers can select equipment around the complete application.</p></div>
+                    </div>
+                    <div class="system-list">
+                        <div class="system-item"><span>01</span><div><strong>Hoists</strong><p>Lifting equipment for different capacities, standards and operating requirements.</p></div></div>
+                        <div class="system-item"><span>02</span><div><strong>Control</strong><p>Control options for single-hoist and coordinated multi-hoist systems.</p></div></div>
+                        <div class="system-item"><span>03</span><div><strong>Transport</strong><p>Purpose-built flight cases for protected storage and repeated movement.</p></div></div>
+                        <div class="system-item"><span>04</span><div><strong>Accessories</strong><p>Supporting components for practical system configuration and integration.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-white">
+            <div class="catalog-container">
+                <div class="about-heading-row">
+                    <div><span class="about-label">How we work</span><h2>Built around the application.</h2></div>
+                    <p>The right solution starts with the production requirement, not simply a product list.</p>
+                </div>
+                <div class="process-list">
+                    <article class="process-item"><span class="process-number">01</span><h3>Understand</h3><p>We begin with load, venue, travel, power, control and operating requirements.</p></article>
+                    <article class="process-item"><span class="process-number">02</span><h3>Configure</h3><p>We match the suitable hoist series, capacity, control method, case and accessories.</p></article>
+                    <article class="process-item"><span class="process-number">03</span><h3>Deliver</h3><p>Product information and project communication are organised clearly for efficient implementation.</p></article>
+                    <article class="process-item"><span class="process-number">04</span><h3>Support</h3><p>Documentation, technical communication and service guidance remain accessible after delivery.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-soft">
+            <div class="catalog-container">
+                <div class="about-heading-row">
+                    <div><span class="about-label">Professional environments</span><h2>Made for demanding productions.</h2></div>
+                    <p>RIGMA systems are developed around the practical demands of live entertainment and professional stage applications.</p>
+                </div>
+                <div class="application-grid">
+                    <article class="application-item"><span>01 · LIVE</span><h3>Concerts</h3></article>
+                    <article class="application-item"><span>02 · TOURING</span><h3>Productions</h3></article>
+                    <article class="application-item"><span>03 · VENUE</span><h3>Theatres</h3></article>
+                    <article class="application-item"><span>04 · INSTALLATION</span><h3>Entertainment spaces</h3></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section about-section-white">
+            <div class="catalog-container">
+                <div class="future-panel">
+                    <div><span class="about-label">The next stage</span><h2>Knowledge and service beyond equipment.</h2></div>
+                    <p>RIGMA is developing a more connected service model built around product identification, accessible technical information and lifecycle management—making professional equipment easier to understand, manage and support over time.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-contact">
+            <div class="catalog-container about-contact-grid">
+                <div><h2>Let’s build the right lifting system.</h2><p>Tell us about your venue, load, travel, power and control requirements. RIGMA will help organise a suitable configuration.</p></div>
+                <a class="catalog-button" href="mailto:sales@rigmahoist.com?subject=RIGMA%20Stage%20Lifting%20Enquiry">Contact RIGMA</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script src="/js/site-shell.js?v=2" defer></script>
+</body>
+</html>
