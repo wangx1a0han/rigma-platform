@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Hoist Flight Cases | RIGMA</title>
+    <meta name="description" content="Purpose-built RIGMA flight cases for 250 kg, 500 kg, 1000 kg and 2000 kg stage hoists.">
+    <link rel="stylesheet" href="/css/style.css?v=3">
+    <link rel="stylesheet" href="/css/products.css?v=3">
+    <style>
+        .flight-case-page{
+            --case-green:#8cff00;
+        }
+
+        .flight-case-page .case-hero{
+            padding:92px 0 96px;
+            border-bottom:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-hero-grid{
+            display:grid;
+            grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+            gap:80px;
+            align-items:end;
+        }
+
+        .flight-case-page .case-hero-note{
+            padding:34px;
+            border-left:3px solid var(--case-green);
+            background:#fff;
+            color:#5d605c;
+            font-size:17px;
+            line-height:1.7;
+        }
+
+        .flight-case-page .case-products{
+            padding:104px 0;
+        }
+
+        .flight-case-page .case-product{
+            display:grid;
+            grid-template-columns:minmax(360px,.85fr) minmax(0,1.15fr);
+            gap:64px;
+            align-items:center;
+            padding:64px 0;
+            border-top:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-product:first-of-type{
+            margin-top:52px;
+        }
+
+        .flight-case-page .case-product:last-of-type{
+            border-bottom:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-product-number{
+            display:block;
+            margin-bottom:18px;
+            color:var(--case-green);
+            font-size:12px;
+            font-weight:800;
+            letter-spacing:3px;
+            text-transform:uppercase;
+        }
+
+        .flight-case-page .case-product h2{
+            max-width:570px;
+            color:#151615;
+            font-size:clamp(42px,4.6vw,68px);
+            line-height:.96;
+            letter-spacing:-2px;
+            text-transform:uppercase;
+        }
+
+        .flight-case-page .case-product-intro{
+            max-width:570px;
+            margin-top:24px;
+            color:#5d605c;
+            font-size:18px;
+            line-height:1.65;
+        }
+
+        .flight-case-page .case-meta{
+            margin-top:34px;
+            border-top:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-meta-row{
+            display:grid;
+            grid-template-columns:130px 1fr;
+            gap:22px;
+            padding:15px 0;
+            border-bottom:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-meta-label{
+            color:#777b76;
+            font-size:11px;
+            font-weight:700;
+            letter-spacing:1.5px;
+            text-transform:uppercase;
+        }
+
+        .flight-case-page .case-meta-value{
+            color:#202220;
+            font-size:14px;
+            line-height:1.5;
+        }
+
+        .flight-case-page .case-gallery{
+            display:grid;
+            grid-template-columns:repeat(2,minmax(0,1fr));
+            gap:14px;
+        }
+
+        .flight-case-page .case-image{
+            position:relative;
+            min-height:420px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            overflow:hidden;
+            border:1px solid var(--rigma-line);
+            background:#fff;
+        }
+
+        .flight-case-page .case-image img{
+            width:94%;
+            height:390px;
+            object-fit:contain;
+        }
+
+        .flight-case-page .case-image span{
+            position:absolute;
+            left:18px;
+            bottom:16px;
+            color:#777b76;
+            font-size:10px;
+            font-weight:700;
+            letter-spacing:2px;
+            text-transform:uppercase;
+        }
+
+        .flight-case-page .case-features{
+            padding:96px 0;
+            border-top:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-feature-grid{
+            display:grid;
+            grid-template-columns:repeat(3,minmax(0,1fr));
+            margin-top:48px;
+            border-top:1px solid var(--rigma-line);
+            border-left:1px solid var(--rigma-line);
+        }
+
+        .flight-case-page .case-feature{
+            min-height:245px;
+            padding:34px;
+            border-right:1px solid var(--rigma-line);
+            border-bottom:1px solid var(--rigma-line);
+            background:#fff;
+        }
+
+        .flight-case-page .case-feature-index{
+            color:var(--case-green);
+            font-size:12px;
+            font-weight:800;
+            letter-spacing:2px;
+        }
+
+        .flight-case-page .case-feature h3{
+            margin-top:52px;
+            color:#151615;
+            font-size:26px;
+            line-height:1.12;
+            text-transform:uppercase;
+        }
+
+        .flight-case-page .case-feature p{
+            margin-top:14px;
+            color:#646763;
+            font-size:15px;
+            line-height:1.6;
+        }
+
+        .flight-case-page .contact-panel{
+            background:linear-gradient(135deg,#fff 0,#efffdc 100%);
+        }
+
+        @media (max-width:1100px){
+            .flight-case-page .case-product{
+                grid-template-columns:1fr;
+            }
+
+            .flight-case-page .case-hero-grid{
+                grid-template-columns:1fr;
+                gap:44px;
+            }
+        }
+
+        @media (max-width:768px){
+            .flight-case-page .case-hero{
+                padding:58px 0 64px;
+            }
+
+            .flight-case-page .case-products,
+            .flight-case-page .case-features{
+                padding:72px 0;
+            }
+
+            .flight-case-page .case-product{
+                gap:38px;
+                padding:48px 0;
+            }
+
+            .flight-case-page .case-gallery,
+            .flight-case-page .case-feature-grid{
+                grid-template-columns:1fr;
+            }
+
+            .flight-case-page .case-image{
+                min-height:360px;
+            }
+
+            .flight-case-page .case-image img{
+                height:330px;
+            }
+
+            .flight-case-page .case-meta-row{
+                grid-template-columns:1fr;
+                gap:6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="catalog-main flight-case-page">
+        <div class="catalog-breadcrumbs">
+            <div class="catalog-container"><a href="/">Home</a><span>/</span>Flight Case</div>
+        </div>
+
+        <section class="case-hero">
+            <div class="catalog-container case-hero-grid">
+                <div>
+                    <span class="catalog-eyebrow">Stage hoist transport</span>
+                    <h1 class="catalog-title">Purpose-built <span class="accent">flight cases.</span></h1>
+                    <p class="catalog-intro">Protect RIGMA stage hoists in storage, transit and daily production. Choose the case configuration that matches the hoist capacity.</p>
+                </div>
+                <p class="case-hero-note">Three practical formats cover RIGMA hoists from 250 kg to 2000 kg, with protected interiors and professional touring hardware.</p>
+            </div>
+        </section>
+
+        <section class="case-products">
+            <div class="catalog-container">
+                <div class="section-heading">
+                    <div><span class="catalog-eyebrow">Available configurations</span><h2>Select by hoist capacity.</h2></div>
+                    <p>Closed and open views show the exterior construction and protected internal layout of each case.</p>
+                </div>
+
+                <article class="case-product">
+                    <div class="case-product-copy">
+                        <span class="case-product-number">01 · Dual hoist case</span>
+                        <h2>250 / 500 kg Flight Case</h2>
+                        <p class="case-product-intro">A two-hoist transport case for all RIGMA 250 kg and 500 kg stage hoists.</p>
+                        <div class="case-meta">
+                            <div class="case-meta-row"><span class="case-meta-label">Capacity</span><span class="case-meta-value">2 hoists per case</span></div>
+                            <div class="case-meta-row"><span class="case-meta-label">Compatible with</span><span class="case-meta-value">All RIGMA 250 kg and 500 kg hoists</span></div>
+                        </div>
+                    </div>
+                    <div class="case-gallery">
+                        <figure class="case-image"><img src="/assets/images/products/flight-case/250-500kg/rigma-flight-case-250-500kg-closed.png" alt="Closed RIGMA flight case for two 250 kg or 500 kg hoists"><span>Closed view</span></figure>
+                        <figure class="case-image"><img src="/assets/images/products/flight-case/250-500kg/rigma-flight-case-250-500kg-open.png" alt="Open RIGMA flight case for two 250 kg or 500 kg hoists"><span>Open view</span></figure>
+                    </div>
+                </article>
+
+                <article class="case-product">
+                    <div class="case-product-copy">
+                        <span class="case-product-number">02 · Single hoist case</span>
+                        <h2>1000 kg Flight Case</h2>
+                        <p class="case-product-intro">A single-hoist transport case sized for all RIGMA 1000 kg stage hoists.</p>
+                        <div class="case-meta">
+                            <div class="case-meta-row"><span class="case-meta-label">Capacity</span><span class="case-meta-value">1 hoist per case</span></div>
+                            <div class="case-meta-row"><span class="case-meta-label">Compatible with</span><span class="case-meta-value">All RIGMA 1000 kg hoists</span></div>
+                        </div>
+                    </div>
+                    <div class="case-gallery">
+                        <figure class="case-image"><img src="/assets/images/products/flight-case/1000kg/rigma-flight-case-1000kg-closed.png" alt="Closed RIGMA flight case for a 1000 kg hoist"><span>Closed view</span></figure>
+                        <figure class="case-image"><img src="/assets/images/products/flight-case/1000kg/rigma-flight-case-1000kg-open.png" alt="Open RIGMA flight case for a 1000 kg hoist"><span>Open view</span></figure>
+                    </div>
+                </article>
+
+                <article class="case-product">
+                    <div class="case-product-copy">
+                        <span class="case-product-number">03 · Single hoist case</span>
+                        <h2>2000 kg Flight Case</h2>
+                        <p class="case-product-intro">A single-hoist transport case sized for all RIGMA 2000 kg stage hoists.</p>
+                        <div class="case-meta">
+                            <div class="case-meta-row"><span class="case-meta-label">Capacity</span><span class="case-meta-value">1 hoist per case</span></div>
+                            <div class="case-meta-row"><span class="case-meta-label">Compatible with</span><span class="case-meta-value">All RIGMA 2000 kg hoists</span></div>
+                        </div>
+                    </div>
+                    <div class="case-gallery">
+                        <figure class="case-image"><img src="/assets/images/products/flight-case/2000kg/rigma-flight-case-2000kg-closed.png" alt="Closed RIGMA flight case for a 2000 kg hoist"><span>Closed view</span></figure>
+                        <figure class="case-image"><img src="/assets/images/products/flight-case/2000kg/rigma-flight-case-2000kg-open.png" alt="Open RIGMA flight case for a 2000 kg hoist"><span>Open view</span></figure>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="case-features">
+            <div class="catalog-container">
+                <div class="section-heading">
+                    <div><span class="catalog-eyebrow">Professional construction</span><h2>Built for repeated transport.</h2></div>
+                    <p>All three configurations use the same professional case construction and touring-grade component specification.</p>
+                </div>
+                <div class="case-feature-grid">
+                    <article class="case-feature"><span class="case-feature-index">01</span><h3>12 mm wood panel</h3><p>Rigid panel construction provides a durable protective enclosure for stage-hoist transport and storage.</p></article>
+                    <article class="case-feature"><span class="case-feature-index">02</span><h3>Penn Elcom metal hardware</h3><p>Professional metal hardware supports dependable repeated handling in production environments.</p></article>
+                    <article class="case-feature"><span class="case-feature-index">03</span><h3>4-inch heavy-duty casters</h3><p>European-style silent casters provide smooth, controlled movement across venues and loading areas.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="catalog-container">
+                <div class="contact-panel">
+                    <div><h2>Need a flight case for your hoists?</h2><p>Tell us the hoist series, capacity and quantity. RIGMA will recommend the suitable case configuration.</p></div>
+                    <a class="catalog-button primary" href="mailto:sales@rigmahoist.com?subject=RIGMA%20Flight%20Case%20Enquiry">Request a quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script src="/js/site-shell.js?v=2" defer></script>
+</body>
+</html>
